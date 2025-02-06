@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-container {
+    display: flex;
+    width: 100vw;
+    height: 6.25vh;
+
+}
+
+.child-div {
+    width: 6.25vw;
+    height: 6.25vw;
+    border: solid 2px black;
+
+}
+
+#button {
+    align-self: center;
+    margin: 20px 0px;
+    padding: 2px 5px;
+    font-size: 16px;
+}
