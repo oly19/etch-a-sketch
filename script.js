@@ -13,9 +13,19 @@ for (let i = 0; i < 16; i++) {
 }
 
 function mouseOverEffect() {
+
+    function generateRandomColor() {
+        const rgbArray = []
+        for (i = 0; i < 3; i++){
+            rgbArray.push(Math.floor(256*Math.random()))
+        }
+        const rgbString = "rgb(" + rgbArray.join(" ") + ")"
+        return rgbString
+    }
+
     const childDiv = document.querySelectorAll(".child-div");
     for (let div of childDiv) {
-        div.addEventListener("mouseover", () => div.style.backgroundColor = "red");
+        div.addEventListener("mouseover", () => div.style.backgroundColor = generateRandomColor());
     }
 }
 
